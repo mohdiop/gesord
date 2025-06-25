@@ -1,0 +1,33 @@
+type Query {
+    getComputerById(id: Int!): Computer
+    getComputerByEmployeeId(id: Int!): Computer
+    getAllComputers: [Computer]
+    getEmployeeById(id: Int!): Employee
+    getAllEmployees: [Employee]
+}
+
+type Mutation {
+    createComputer(mark: String, model: String, price: Float, techs: String, employeeId: Int): Computer
+    updateComputerById(id: Int, mark: String, model: String, price: Float, techs: String, employeeId: Int): Computer
+    deleteComputerById(id: Int): Boolean
+    createEmployee(firstName: String, lastName: String, email: String, position: String): Employee
+    updateEmployeeById(id: Int, firstName: String, lastName: String, email: String, position: String): Employee
+    deleteEmployeeById(id: Int): Boolean
+}
+
+type Computer {
+    id: Int
+    mark: String
+    model: String
+    price: Float
+    techs: String
+    employee: Employee
+}
+
+type Employee {
+    id: Int
+    firstName: String
+    lastName: String
+    email: String
+    position: String
+}

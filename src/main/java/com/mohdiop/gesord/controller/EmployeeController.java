@@ -65,7 +65,7 @@ public class EmployeeController {
     }
 
     @MutationMapping
-    public Boolean createEmployee(
+    public Boolean deleteById(
             @Argument int  id
     ) {
         return employeeService.deleteEmployeeById(id);

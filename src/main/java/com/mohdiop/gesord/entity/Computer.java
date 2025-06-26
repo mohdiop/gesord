@@ -14,6 +14,10 @@ public class Computer {
     private String techs;
     private int employeeId;
 
+    public Computer(){
+
+    }
+
     public Computer(int id, String mark, String model, Float price, String techs, int employeeId){
         this.id = id;
         this.mark = mark;

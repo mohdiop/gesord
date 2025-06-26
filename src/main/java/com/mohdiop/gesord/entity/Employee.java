@@ -13,7 +13,11 @@ public class Employee {
     private String email;
     private String position;
 
-    public Employee (int id, String firstName, String lastName, String email, String position) {
+    public Employee() {
+
+    }
+
+    public Employee(int id, String firstName, String lastName, String email, String position) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,7 +25,7 @@ public class Employee {
         this.position = position;
     }
 
-    public Employee (String firstName, String lastName, String email, String position) {
+    public Employee(String firstName, String lastName, String email, String position) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

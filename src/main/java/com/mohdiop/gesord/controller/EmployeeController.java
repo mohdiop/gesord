@@ -46,7 +46,7 @@ public class EmployeeController {
     }
 
     @MutationMapping
-    public Employee createEmployee(
+    public Employee updateEmployeeById(
             @Argument int id,
             @Argument String firstName,
             @Argument String lastName,
